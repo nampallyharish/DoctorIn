@@ -1,0 +1,3 @@
+# DoctorIn Backend Dependencies
+# References the modular base requirements
+-r requirements/base.txt
