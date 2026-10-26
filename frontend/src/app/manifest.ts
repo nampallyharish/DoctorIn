@@ -1,0 +1,47 @@
+import { MetadataRoute } from "next";
+
+export default function manifest(): MetadataRoute.Manifest {
+  return {
+    name: "DoctorIn — Professional Healthcare Platform",
+    short_name: "DoctorIn",
+    description: "Connect with Verified Medical Professionals & Healthcare Organizations.",
+    start_url: "/",
+    id: "/",
+    display: "standalone",
+    orientation: "portrait-primary",
+    background_color: "#ffffff",
+    theme_color: "#0d9488",
+    icons: [
+      {
+        src: "/icon-192.png",
+        sizes: "192x192",
+        type: "image/png",
+        purpose: "any",
+      },
+      {
+        src: "/icon-192.png",
+        sizes: "192x192",
+        type: "image/png",
+        purpose: "maskable",
+      },
+      {
+        src: "/icon-512.png",
+        sizes: "512x512",
+        type: "image/png",
+        purpose: "any",
+      },
+      {
+        src: "/icon-512.png",
+        sizes: "512x512",
+        type: "image/png",
+        purpose: "maskable",
+      },
+      {
+        src: "/apple-touch-icon.png",
+        sizes: "180x180",
+        type: "image/png",
+      },
+    ],
+    categories: ["medical", "health", "business", "social"],
+  };
+}
